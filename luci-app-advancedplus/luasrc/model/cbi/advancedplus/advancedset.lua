@@ -36,7 +36,7 @@ o = s:option(Flag, "set_ttyd", translate("Allow TTYD external network access"))
 o.default = "0"
 
 o = s:option(Flag, "set_firewall_wan", translate("Set firewall wan to open"))
-o.default = "0"
+o.default = "1"
 
 o = s:option(Flag, "dhcp_domain", translate("Add Android host name mapping"), translate("Resolve the issue of Android native TV not being able to connect to WiFi for the first time"))
 o.default = "0"
