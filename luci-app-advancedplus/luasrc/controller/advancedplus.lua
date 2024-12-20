@@ -15,12 +15,11 @@ function index()
 	page.dependent = true
 	page.acl_depends = { "luci-app-advancedplus" }
 	entry({"admin", "system", "advancedplus", "advancededit"}, cbi("advancedplus/advancededit"), _("Advanced Edit"), 10).leaf = true
-	entry({"admin", "system", "advancedplus", "advancedset"}, cbi("advancedplus/advancedset"), _("Advanced Setting"), 20).leaf = true
 	if NIXIO_FS.access('/www/luci-static/kucat/css/style.css') then
-		entry({"admin", "system", "advancedplus", "config-kucat"}, cbi("advancedplus/config-kucat"), "KuCat".._("Theme Config"), 40).leaf = true
+		entry({"admin", "system", "advancedplus", "config-kucat"}, cbi("advancedplus/config-kucat"), "KuCat ".._("Theme Config"), 40).leaf = true
 	end
 	if NIXIO_FS.access('/www/luci-static/argon/css/cascade.css') then
-		entry({"admin", "system", "advancedplus", "config-argon"}, form("advancedplus/config-argon"), "Argon".._("Theme Config"), 50).leaf = true
+		entry({"admin", "system", "advancedplus", "config-argon"}, form("advancedplus/config-argon"), "Argon ".._("Theme Config"), 50).leaf = true
 	end
 	entry({"admin", "system", "advancedplus", "upload-login"}, form("advancedplus/upload-login"), _("Login Background Upload"), 70).leaf = true
 	entry({"admin", "system", "advancedplus", "upload-desktop"}, form("advancedplus/upload-desktop"), _("Desktop Background Upload"), 80).leaf = true
