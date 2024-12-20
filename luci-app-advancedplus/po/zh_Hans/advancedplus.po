@@ -11,7 +11,6 @@ msgstr "0 清晰 - 10 模糊"
 msgid "0 Transparent - 1 Opaque"
 msgstr "0 最透明 - 1 不透明"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:6
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:14
 msgid "</br>For specific usage, see:"
 msgstr "</br>使用说明："
@@ -32,14 +31,6 @@ msgstr ""
 msgid "A HEX Color"
 msgstr "十六进制颜色值"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:23
-msgid "Accessing using HTTPS"
-msgstr "使用https访问"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:41
-msgid "Add Android host name mapping"
-msgstr "添加安卓主机名映射"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:56
 msgid "Administration"
 msgstr "管理权"
@@ -53,18 +44,9 @@ msgstr "进阶参数编辑"
 msgid "Advanced Plus"
 msgstr "进阶设置"
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:18
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:4
-msgid "Advanced Setting"
-msgstr "高级设置"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:54
 msgid "Advanced plus"
 msgstr "进阶设置"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:35
-msgid "Allow TTYD external network access"
-msgstr "允许TTYD外网访问"
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:94
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:94
@@ -122,7 +104,7 @@ msgstr "炫酷海洋之心"
 msgid "Create upload file error."
 msgstr "创建上传文件失败。"
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:26
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:25
 msgid "Desktop Background Upload"
 msgstr "桌面壁纸上传"
 
@@ -136,10 +118,6 @@ msgid ""
 "application."
 msgstr "文档内容，应用保存后自动重启生效。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:15
-msgid "Download bandwidth (Mbit/s)"
-msgstr "下载带宽（Mbit/s）"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:90
 msgid "Enable Color Matching"
 msgstr "启用配色方案"
@@ -147,10 +125,6 @@ msgstr "启用配色方案"
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:40
 msgid "Enable Daily Word"
 msgstr "启用每日一言"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:11
-msgid "Enable QOS automatic optimization strategy (testing function)"
-msgstr "开启QOS自动优化策略（测试功能）"
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:111
 msgid "Enable Wallpaper"
@@ -210,15 +184,10 @@ msgstr "磨砂玻璃模糊半径"
 msgid "Grant UCI access for luci-app-advancedplus"
 msgstr "为 luci-app-advancedplus 授予 UCI（统一配置接口）访问权限。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:5
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:13
 msgid "Here you can adjust various settings."
 msgstr "在这里你可以调整各种设置。"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:27
-msgid "Hide Wizard"
-msgstr "隐藏设置向导"
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:21
 msgid "Iciba Wallpaper"
@@ -248,7 +217,7 @@ msgstr ""
 "本地壁纸库需自行上传，自动下载仅当天登录第一次才下载。彻底解决在线壁纸导致的"
 "卡顿和白屏等问题，如果还卡请清除浏览器缓存。"
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:25
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:24
 msgid "Login Background Upload"
 msgstr "登录壁纸上传"
 
@@ -269,27 +238,15 @@ msgstr "修改时间"
 msgid "Mount Points"
 msgstr "挂载点"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:25
-msgid "No backend menu required"
-msgstr "不用后台菜单"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:66
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:66
 msgid "No specify upload file."
 msgstr "未指定上传文件"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:25
-msgid "OPENWRT backend and SSH login do not display shortcut menus"
-msgstr "OpenWRT后台和SSH登录不显示快捷菜单"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:24
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:24
 msgid "Only JPG, PNG, and GIF files can be uploaded."
 msgstr "只能上传JPG、PNG和GIF格式的文件。"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:23
-msgid "Open the address in the background and use HTTPS for secure access"
-msgstr "打开后台地址用https安全访问"
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:45
 msgid "Overview"
@@ -308,10 +265,6 @@ msgstr "系统进程"
 msgid "Proxy Key Settings"
 msgstr "代理快捷键设置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:11
-msgid "Qos automatic optimization"
-msgstr "QoS自动优化"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:49
 msgid "Realtime Graphs"
 msgstr "实时信息"
@@ -324,12 +277,6 @@ msgstr "重启"
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:102
 msgid "Remove"
 msgstr "移除"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:41
-msgid ""
-"Resolve the issue of Android native TV not being able to connect to WiFi for "
-"the first time"
-msgstr "解决安卓原生TV首次连不上WiFi的问题"
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:46
 msgid "Routing"
@@ -354,14 +301,6 @@ msgstr "定时重启"
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:59
 msgid "Scheduled Tasks"
 msgstr "计划任务"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:38
-msgid "Set firewall wan to open"
-msgstr "设置防火墙WAN打开"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:27
-msgid "Show or hide the setup wizard menu"
-msgstr "显示或者隐藏设置向导菜单"
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:101
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:101
@@ -392,10 +331,6 @@ msgstr "系统日志"
 msgid "System key Settings"
 msgstr "系统快捷键设置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:31
-msgid "TSO optimization for network card interruption"
-msgstr "网卡断流TSO优化"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancededit.lua:18
 msgid ""
 "The starting number symbol (#) or each line of the semicolon (;) is "
@@ -403,8 +338,8 @@ msgid ""
 msgstr ""
 "开头的数字符号（＃）或分号的每一行（;）被视为注释，删除（;）启用指定选项。"
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:20
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:23
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:19
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:22
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:12
 msgid "Theme Config"
@@ -436,12 +371,6 @@ msgstr "番茄别样红"
 msgid "Transparency"
 msgstr "透明度"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:31
-msgid ""
-"Turn off the TSO parameters of the INTEL225 network card to improve network "
-"interruption"
-msgstr "关闭Intel 225网卡TSO参数，改善网络断流。"
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:22
 msgid "Unsplash Wallpaper"
 msgstr "Unsplash 壁纸"
@@ -454,10 +383,6 @@ msgstr "上传"
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:24
 msgid "Upload (Free:"
 msgstr "上传 (剩余空间："
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:19
-msgid "Upload bandwidth (Mbit/s)"
-msgstr "上传带宽（Mbit/s）"
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:28
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:28
@@ -500,6 +425,61 @@ msgstr "[暗色模式] "
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:49
 msgid "[Light Mode]"
 msgstr "[亮色模式] "
+
+#~ msgid "Accessing using HTTPS"
+#~ msgstr "使用https访问"
+
+#~ msgid "Add Android host name mapping"
+#~ msgstr "添加安卓主机名映射"
+
+#~ msgid "Advanced Setting"
+#~ msgstr "高级设置"
+
+#~ msgid "Allow TTYD external network access"
+#~ msgstr "允许TTYD外网访问"
+
+#~ msgid "Download bandwidth (Mbit/s)"
+#~ msgstr "下载带宽（Mbit/s）"
+
+#~ msgid "Enable QOS automatic optimization strategy (testing function)"
+#~ msgstr "开启QOS自动优化策略（测试功能）"
+
+#~ msgid "Hide Wizard"
+#~ msgstr "隐藏设置向导"
+
+#~ msgid "No backend menu required"
+#~ msgstr "不用后台菜单"
+
+#~ msgid "OPENWRT backend and SSH login do not display shortcut menus"
+#~ msgstr "OpenWRT后台和SSH登录不显示快捷菜单"
+
+#~ msgid "Open the address in the background and use HTTPS for secure access"
+#~ msgstr "打开后台地址用https安全访问"
+
+#~ msgid "Qos automatic optimization"
+#~ msgstr "QoS自动优化"
+
+#~ msgid ""
+#~ "Resolve the issue of Android native TV not being able to connect to WiFi "
+#~ "for the first time"
+#~ msgstr "解决安卓原生TV首次连不上WiFi的问题"
+
+#~ msgid "Set firewall wan to open"
+#~ msgstr "设置防火墙WAN打开"
+
+#~ msgid "Show or hide the setup wizard menu"
+#~ msgstr "显示或者隐藏设置向导菜单"
+
+#~ msgid "TSO optimization for network card interruption"
+#~ msgstr "网卡断流TSO优化"
+
+#~ msgid ""
+#~ "Turn off the TSO parameters of the INTEL225 network card to improve "
+#~ "network interruption"
+#~ msgstr "关闭Intel 225网卡TSO参数，改善网络断流。"
+
+#~ msgid "Upload bandwidth (Mbit/s)"
+#~ msgstr "上传带宽（Mbit/s）"
 
 #~ msgid "Argon Theme Config"
 #~ msgstr "Argon 主题设置"

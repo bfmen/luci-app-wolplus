@@ -11,7 +11,6 @@ msgstr ""
 msgid "0 Transparent - 1 Opaque"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:6
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:14
 msgid "</br>For specific usage, see:"
 msgstr ""
@@ -29,14 +28,6 @@ msgstr ""
 msgid "A HEX Color"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:23
-msgid "Accessing using HTTPS"
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:41
-msgid "Add Android host name mapping"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:56
 msgid "Administration"
 msgstr ""
@@ -50,17 +41,8 @@ msgstr ""
 msgid "Advanced Plus"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:18
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:4
-msgid "Advanced Setting"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:54
 msgid "Advanced plus"
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:35
-msgid "Allow TTYD external network access"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:94
@@ -119,7 +101,7 @@ msgstr ""
 msgid "Create upload file error."
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:26
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:25
 msgid "Desktop Background Upload"
 msgstr ""
 
@@ -133,20 +115,12 @@ msgid ""
 "application."
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:15
-msgid "Download bandwidth (Mbit/s)"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:90
 msgid "Enable Color Matching"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:40
 msgid "Enable Daily Word"
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:11
-msgid "Enable QOS automatic optimization strategy (testing function)"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:111
@@ -207,14 +181,9 @@ msgstr ""
 msgid "Grant UCI access for luci-app-advancedplus"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:5
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:13
 msgid "Here you can adjust various settings."
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:27
-msgid "Hide Wizard"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:21
@@ -243,7 +212,7 @@ msgid ""
 "downloaded on the same day will be automatically downloaded."
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:25
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:24
 msgid "Login Background Upload"
 msgstr ""
 
@@ -264,26 +233,14 @@ msgstr ""
 msgid "Mount Points"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:25
-msgid "No backend menu required"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:66
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:66
 msgid "No specify upload file."
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:25
-msgid "OPENWRT backend and SSH login do not display shortcut menus"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:24
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:24
 msgid "Only JPG, PNG, and GIF files can be uploaded."
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:23
-msgid "Open the address in the background and use HTTPS for secure access"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:45
@@ -303,10 +260,6 @@ msgstr ""
 msgid "Proxy Key Settings"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:11
-msgid "Qos automatic optimization"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:49
 msgid "Realtime Graphs"
 msgstr ""
@@ -318,12 +271,6 @@ msgstr ""
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:102
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:102
 msgid "Remove"
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:41
-msgid ""
-"Resolve the issue of Android native TV not being able to connect to WiFi for "
-"the first time"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:46
@@ -348,14 +295,6 @@ msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:59
 msgid "Scheduled Tasks"
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:38
-msgid "Set firewall wan to open"
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:27
-msgid "Show or hide the setup wizard menu"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:101
@@ -387,18 +326,14 @@ msgstr ""
 msgid "System key Settings"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:31
-msgid "TSO optimization for network card interruption"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancededit.lua:18
 msgid ""
 "The starting number symbol (#) or each line of the semicolon (;) is "
 "considered a comment, Remove (;) and enable the specified option."
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:20
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:23
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:19
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:22
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:12
 msgid "Theme Config"
@@ -430,12 +365,6 @@ msgstr ""
 msgid "Transparency"
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:31
-msgid ""
-"Turn off the TSO parameters of the INTEL225 network card to improve network "
-"interruption"
-msgstr ""
-
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:22
 msgid "Unsplash Wallpaper"
 msgstr ""
@@ -447,10 +376,6 @@ msgstr ""
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:24
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:24
 msgid "Upload (Free:"
-msgstr ""
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancedset.lua:19
-msgid "Upload bandwidth (Mbit/s)"
 msgstr ""
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:28
