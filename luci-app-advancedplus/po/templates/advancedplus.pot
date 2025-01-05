@@ -45,6 +45,10 @@ msgstr ""
 msgid "Advanced plus"
 msgstr ""
 
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:22
+msgid "Argon Theme Config"
+msgstr ""
+
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:94
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:94
 msgid "Background file list"
@@ -197,6 +201,10 @@ msgid ""
 "set independently."
 msgstr ""
 
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:19
+msgid "KuCat Theme Config"
+msgstr ""
+
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:62
 msgid "LED Configuration"
 msgstr ""
@@ -332,8 +340,6 @@ msgid ""
 "considered a comment, Remove (;) and enable the specified option."
 msgstr ""
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:19
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:22
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:12
 msgid "Theme Config"

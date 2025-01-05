@@ -48,6 +48,10 @@ msgstr "进阶设置"
 msgid "Advanced plus"
 msgstr "进阶设置"
 
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:22
+msgid "Argon Theme Config"
+msgstr "Argon 主题设置"
+
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-desktop.lua:94
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/upload-login.lua:94
 msgid "Background file list"
@@ -200,6 +204,10 @@ msgid ""
 "set independently."
 msgstr "登录壁纸与桌面壁纸是否一致，不选择表示桌面壁纸和登录壁纸独立设置。"
 
+#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:19
+msgid "KuCat Theme Config"
+msgstr "KuCat 主题设置"
+
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:62
 msgid "LED Configuration"
 msgstr "LED配置"
@@ -338,8 +346,6 @@ msgid ""
 msgstr ""
 "开头的数字符号（＃）或分号的每一行（;）被视为注释，删除（;）启用指定选项。"
 
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:19
-#: luci-app-advancedplus/luasrc/controller/advancedplus.lua:22
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:12
 msgid "Theme Config"
@@ -481,17 +487,11 @@ msgstr "[亮色模式] "
 #~ msgid "Upload bandwidth (Mbit/s)"
 #~ msgstr "上传带宽（Mbit/s）"
 
-#~ msgid "Argon Theme Config"
-#~ msgstr "Argon 主题设置"
-
 #~ msgid "Here you can adjust various system settings."
 #~ msgstr "这里可以设置系统的各种参数。"
 
 #~ msgid "Here you can adjust various theme settings. [Recommend Chrome]"
 #~ msgstr "这里可以设置主题的各种参数。[建议使用 Chrome]"
-
-#~ msgid "KuCat Theme Config"
-#~ msgstr "KuCat 主题设置"
 
 #~ msgid ""
 #~ "At the same time, important plugin parameters can be compiled. At the "
