@@ -1,9 +1,13 @@
 local NIXIO_FS = require("nixio.fs")
 local LUCI_UCI = require("luci.model.uci").cursor()
+local LUCI_SYS = require("luci.sys")
+local LUCI_HTTP = require("luci.http")
+local LUCI_DISPATCHER = require("luci.dispatcher")
 
-local name = 'argon'
+local name = 'Argon'
+local m, s, o
 
-local primary, dark_primary, blur, blur_dark, transparency, transparency_dark, mode, online_wallpaper
+local primary, dark_primary, blur, blur_dark, transparency, transparency_dark, mode, online_wallpaper, progressbar_font
 if NIXIO_FS.access('/etc/config/argon') then
 	primary = LUCI_UCI:get_first('argon', 'global', 'primary')
 	dark_primary = LUCI_UCI:get_first('argon', 'global', 'dark_primary')
@@ -13,14 +17,15 @@ if NIXIO_FS.access('/etc/config/argon') then
 	transparency_dark = LUCI_UCI:get_first('argon', 'global', 'transparency_dark')
 	mode = LUCI_UCI:get_first('argon', 'global', 'mode')
 	online_wallpaper = LUCI_UCI:get_first('argon', 'global', 'online_wallpaper')
+	progressbar_font = LUCI_UCI:get_first('argon', 'global', 'progressbar_font')
 end
 
-local br, s, o
+m = Map("advancedplus")
+m.title = name..translate("Theme Config")
+m.description = translate("Here you can adjust various settings.")..
 
-br = SimpleForm('config', name..translate("Theme Config"), translate("Here you can adjust various settings."))
-br.reset = false
-br.submit = false
-s = br:section(SimpleSection)
+s = m:section(TypedSection, "basic")
+s.anonymous = true
 
 o = s:option(ListValue, 'online_wallpaper', translate("Wallpaper Source"))
 o:value('none', translate("Local Wallpaper"))
@@ -66,18 +71,15 @@ o.default = blur_dark
 o.datatype = ufloat
 o.rmempty = false
 
-o = s:option(Button, 'save', translate("Save Changes"))
-o.inputstyle = 'reload'
+o = s:option(Value, 'progressbar_font', translate("Bar Font Color"), translate("A HEX Color"))
+o.default = progressbar_font
+o.datatype = ufloat
+o.rmempty = false
 
-function br.handle(self, state, data)
-	if (state == FORM_VALID and data.blur ~= nil and data.blur_dark ~= nil and data.transparency ~= nil and data.transparency_dark ~= nil and data.mode ~= nil and data.online_wallpaper ~= nil) then
-		NIXIO_FS.writefile('/tmp/argon.tmp', data)
-		for key, value in pairs(data) do
-			LUCI_UCI:set('argon', '@global[0]', key, value)
-		end
-		LUCI_UCI:commit('argon')
-	end
-	return true
+m.apply_on_parse = true
+m.on_after_apply = function(self,map)
+	LUCI_SYS.exec("/etc/init.d/advancedplus start >/dev/null 2>&1")
+	LUCI_HTTP.redirect(LUCI_DISPATCHER.build_url("admin", "system", "advancedplus", "config-argon"))
 end
 
-return br
+return m

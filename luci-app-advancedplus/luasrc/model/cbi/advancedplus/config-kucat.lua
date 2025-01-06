@@ -2,16 +2,15 @@ local LUCI_SYS = require("luci.sys")
 local LUCI_HTTP = require("luci.http")
 local LUCI_DISPATCHER = require("luci.dispatcher")
 
-local name = 'kucat'
+local name = 'KuCat'
+local m, s, o
 
 local opacity_sets = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 local transparency_sets = {0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1}
-local m, s, o
 
 m = Map("advancedplus")
 m.title = name..translate("Theme Config")
 m.description = translate("Here you can adjust various settings.")..
-translate("</br>For specific usage, see:").."<a href=\'https://github.com/sirpdboy/luci-app-advancedplus.git' target=\'_blank\'>GitHub @sirpdboy/luci-app-advancedplus </a>"
 
 s = m:section(TypedSection, "basic")
 s.anonymous = true
