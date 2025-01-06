@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - '**/htdocs/**'
+      - '**/luasrc/**'
       - '**/root/**'
 
 env:
@@ -26,18 +27,11 @@ jobs:
   scan:
     runs-on: ubuntu-22.04
     needs: cleanup
-    name: ${{matrix.PKG_NAME}}
-    strategy:
-      fail-fast: false
-      #max-parallel: 4
-      matrix:
-        PKG_NAME: [advancedplus, wolplus]
-
     steps:
-      - name: Checkout source tree
+      - name: Checkout Projects
         uses: actions/checkout@main
 
-      - name: Rescan translation
+      - name: Initialization Environment
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
@@ -47,21 +41,45 @@ jobs:
           curl -LO "https://github.com/openwrt/luci/raw/master/build/i18n-scan.pl"
           curl -LO "https://github.com/openwrt/luci/raw/master/build/i18n-update.pl"
 
-          PKG_PATH="luci-app-${{matrix.PKG_NAME}}"
+      - name: Update Translations
+        run: |
+          CHANGED_PKGS=""
 
-          perl "i18n-scan.pl" ./$PKG_PATH > "$PKG_PATH/po/templates/${{matrix.PKG_NAME}}.pot"
-          perl "i18n-update.pl" "./$PKG_PATH/po"
+          for dir in $(find . -maxdepth 1 -mindepth 1 -type d -not -path '*/\.*'); do
+            PKG_PATH="$dir"
 
-          find ./$PKG_PATH/po/ -name '*.po~' -exec rm -f {} \;
+            for folder in "$PKG_PATH/root/sbin" "$PKG_PATH/root/etc/hotplug.d" "$PKG_PATH/root/etc/init.d" "$PKG_PATH/root/etc/uci-defaults"; do
+              if [ -d "$folder" ]; then
+                chmod 755 -R "$folder"
+              fi
+            done
+
+            if [ -d "$PKG_PATH/po" ]; then
+              mkdir -p "$PKG_PATH/po/templates"
+              PKG_NAME=$(basename $PKG_PATH | sed 's/^luci-\(app-\|theme-\)//g')
+
+              perl "i18n-scan.pl" "$PKG_PATH" > "$PKG_PATH/po/templates/$PKG_NAME.pot"
+              perl "i18n-update.pl" "$PKG_PATH/po"
+
+              find "$PKG_PATH/po/" -name '*.po~' -exec rm -f {} \;
+
+              if [ -n "$(git status -s "$PKG_PATH")" ]; then
+                git add "$PKG_PATH"
+                CHANGED_PKGS="$CHANGED_PKGS $PKG_NAME"
+              fi
+            fi
+          done
+
           rm -f "i18n-scan.pl" "i18n-update.pl"
 
-          [ -z "$(git status -s)" ] || echo -e "CHANGE_STAT=1" >> "$GITHUB_ENV"
+          if [ -n "$CHANGED_PKGS" ]; then
+            echo "CHANGED_PKGS=$CHANGED_PKGS" >> "$GITHUB_ENV"
+          fi
 
-      - name: Commit changes
-        if: ${{ env.CHANGE_STAT }}
+      - name: Commit Changes
+        if: ${{ env.CHANGED_PKGS }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "<github-actions[bot]@users.noreply.github.com>"
-          git add .
-          git commit -m "chore(po): ${{matrix.PKG_NAME}} rescan translation"
+          git commit -m "chore(po): Rescan translation in packages: ${{ env.CHANGED_PKGS }}"
           git push -f origin HEAD:main
