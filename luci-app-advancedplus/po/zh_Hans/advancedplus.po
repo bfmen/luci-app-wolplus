@@ -1,19 +1,15 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:49
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:64
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:54
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:69
 msgid "0 Clear - 10 Blur"
 msgstr "0 清晰 - 10 模糊"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:44
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:59
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:49
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:64
 msgid "0 Transparent - 1 Opaque"
 msgstr "0 最透明 - 1 不透明"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:14
-msgid "</br>For specific usage, see:"
-msgstr "</br>使用说明："
 
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/advancededit.lua:8
 msgid ""
@@ -26,12 +22,13 @@ msgstr ""
 "请不要轻易修改这些配置文档！配置不正确可能会导致不能开机等错误！</strong></"
 "font><br/>"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:39
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:54
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:44
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:59
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:74
 msgid "A HEX Color"
 msgstr "十六进制颜色值"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:56
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:55
 msgid "Administration"
 msgstr "管理权"
 
@@ -44,7 +41,7 @@ msgstr "进阶参数编辑"
 msgid "Advanced Plus"
 msgstr "进阶设置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:54
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:53
 msgid "Advanced plus"
 msgstr "进阶设置"
 
@@ -57,28 +54,32 @@ msgstr "Argon 主题设置"
 msgid "Background file list"
 msgstr "壁纸文件列表"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:63
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:62
 msgid "Backup / Flash"
 msgstr "备份与升级"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:27
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:23
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:74
+msgid "Bar Font Color"
+msgstr ""
+
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:32
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:22
 msgid "Bing Wallpaper"
 msgstr "Bing 壁纸"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:24
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:23
 msgid "Bird 4K Wallpaper"
 msgstr "Bing 4K 壁纸"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:105
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:104
 msgid "Black Tea Eye Protection Gray"
 msgstr "黑茶护眼灰"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:36
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:35
 msgid "Cancel background glass fence special effects"
 msgstr "取消背景玻璃栅栏特效"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:79
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:78
 msgid "Care Mode (large font)"
 msgstr "关怀模式（大字体）"
 
@@ -91,15 +92,15 @@ msgstr "选择本地文件："
 msgid "Click to execute"
 msgstr "点击执行"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:83
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:82
 msgid "Color Scheme List"
 msgstr "颜色配置方案列表"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:106
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:105
 msgid "Cool Night Time"
 msgstr "炫酷黑夜时空"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:107
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:106
 msgid "Cool Ocean Heart"
 msgstr "炫酷海洋之心"
 
@@ -112,7 +113,7 @@ msgstr "创建上传文件失败。"
 msgid "Desktop Background Upload"
 msgstr "桌面壁纸上传"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:61
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:60
 msgid "Disk Man"
 msgstr "磁盘管理"
 
@@ -122,23 +123,23 @@ msgid ""
 "application."
 msgstr "文档内容，应用保存后自动重启生效。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:90
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:89
 msgid "Enable Color Matching"
 msgstr "启用配色方案"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:40
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:39
 msgid "Enable Daily Word"
 msgstr "启用每日一言"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:111
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:110
 msgid "Enable Wallpaper"
 msgstr "启用壁纸"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:32
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:31
 msgid "Expand Toolbar"
 msgstr "展开导航栏"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:32
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:31
 msgid "Expand or shrink the toolbar"
 msgstr "展开或者收缩导航栏"
 
@@ -146,11 +147,11 @@ msgstr "展开或者收缩导航栏"
 msgid "Fatal on get option,please help in debug"
 msgstr "在获取选项时出现严重错误，请在调试中提供帮助。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:131
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:130
 msgid "Fence Background (RGB)"
 msgstr "隔栏背景色（RGB）"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:135
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:134
 msgid "Fence Background Transparency"
 msgstr "隔栏背景透明度"
 
@@ -164,23 +165,23 @@ msgstr "文件名"
 msgid "File saved to"
 msgstr "文件保存到"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:32
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:95
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:37
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:94
 msgid "Follow System"
 msgstr "跟随系统"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:34
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:97
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:39
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:96
 msgid "Force Dark"
 msgstr "强制暗色"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:33
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:96
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:38
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:95
 msgid "Force Light"
 msgstr "强制亮色"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:49
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:64
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:54
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:69
 msgid "Frosted Glass Radius"
 msgstr "磨砂玻璃模糊半径"
 
@@ -188,16 +189,16 @@ msgstr "磨砂玻璃模糊半径"
 msgid "Grant UCI access for luci-app-advancedplus"
 msgstr "为 luci-app-advancedplus 授予 UCI（统一配置接口）访问权限。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:25
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:13
 msgid "Here you can adjust various settings."
 msgstr "在这里你可以调整各种设置。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:21
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:20
 msgid "Iciba Wallpaper"
 msgstr "Iciba 壁纸"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:28
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:27
 msgid ""
 "Is the login wallpaper consistent with the desktop wallpaper? If not "
 "selected, it indicates that the desktop wallpaper and login wallpaper are "
@@ -208,16 +209,16 @@ msgstr "登录壁纸与桌面壁纸是否一致，不选择表示桌面壁纸和
 msgid "KuCat Theme Config"
 msgstr "KuCat 主题设置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:62
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:61
 msgid "LED Configuration"
 msgstr "LED配置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:26
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:20
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:31
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:19
 msgid "Local Wallpaper"
 msgstr "本地壁纸"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:19
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:18
 msgid ""
 "Local wallpapers need to be uploaded on their own, and only the first update "
 "downloaded on the same day will be automatically downloaded."
@@ -229,11 +230,11 @@ msgstr ""
 msgid "Login Background Upload"
 msgstr "登录壁纸上传"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:100
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:99
 msgid "Main Background Color (RGB)"
 msgstr "主背景色（RGB）"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:102
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:101
 msgid "Medium Sea Green"
 msgstr "中海清爽绿"
 
@@ -242,7 +243,7 @@ msgstr "中海清爽绿"
 msgid "Modify time"
 msgstr "修改时间"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:60
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:59
 msgid "Mount Points"
 msgstr "挂载点"
 
@@ -256,28 +257,28 @@ msgstr "未指定上传文件"
 msgid "Only JPG, PNG, and GIF files can be uploaded."
 msgstr "只能上传JPG、PNG和GIF格式的文件。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:45
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:44
 msgid "Overview"
 msgstr "概览"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:39
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:54
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:44
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:59
 msgid "Primary Color"
 msgstr "主色调"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:48
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:47
 msgid "Processes"
 msgstr "系统进程"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:69
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:68
 msgid "Proxy Key Settings"
 msgstr "代理快捷键设置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:49
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:48
 msgid "Realtime Graphs"
 msgstr "实时信息"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:65
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:64
 msgid "Reboot"
 msgstr "重启"
 
@@ -286,27 +287,23 @@ msgstr "重启"
 msgid "Remove"
 msgstr "移除"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:46
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:45
 msgid "Routing"
 msgstr "路由"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:101
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:100
 msgid "Royal Blue"
 msgstr "皇家高级蓝"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:103
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:102
 msgid "Sandy Brown"
 msgstr "桑迪布朗黄"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:69
-msgid "Save Changes"
-msgstr "保存更改"
-
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:64
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:63
 msgid "Scheduled Reboot"
 msgstr "定时重启"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:59
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:58
 msgid "Scheduled Tasks"
 msgstr "计划任务"
 
@@ -315,27 +312,27 @@ msgstr "计划任务"
 msgid "Size"
 msgstr "大小"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:57
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:56
 msgid "Software"
 msgstr "软件包"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:58
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:57
 msgid "Startup"
 msgstr "启动项"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:44
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:43
 msgid "Status key Settings"
 msgstr "状态快捷键设置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:55
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:54
 msgid "System"
 msgstr "系统"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:47
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:46
 msgid "System Log"
 msgstr "系统日志"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:53
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:52
 msgid "System key Settings"
 msgstr "系统快捷键设置"
 
@@ -346,21 +343,21 @@ msgid ""
 msgstr ""
 "开头的数字符号（＃）或分号的每一行（;）被视为注释，删除（;）启用指定选项。"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:20
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:24
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:12
 msgid "Theme Config"
 msgstr "主题设置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:31
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:94
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:36
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:93
 msgid "Theme Mode"
 msgstr "主题模式"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:88
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:87
 msgid "Theme Name"
 msgstr "主题名字"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:36
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:35
 msgid "Thin Mode"
 msgstr "简洁模式"
 
@@ -368,16 +365,16 @@ msgstr "简洁模式"
 msgid "This page is about configuration"
 msgstr "本页是配置"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:104
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:103
 msgid "Tomato Red"
 msgstr "番茄别样红"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:44
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:59
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:49
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:64
 msgid "Transparency"
 msgstr "透明度"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:22
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:21
 msgid "Unsplash Wallpaper"
 msgstr "Unsplash 壁纸"
 
@@ -399,38 +396,44 @@ msgstr "文件将上传到"
 msgid "Waiting,(executing)..."
 msgstr "正在等待，（正在执行）..."
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:123
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:122
 msgid "Wallpaper Blur Radius"
 msgstr "壁纸模糊半径"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:25
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:19
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:30
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:18
 msgid "Wallpaper Source"
 msgstr "壁纸来源"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:28
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:27
 msgid "Wallpaper Synchronization"
 msgstr "壁纸同步"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:115
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-kucat.lua:114
 msgid "Wallpaper Transparency"
 msgstr "壁纸透明度"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:37
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:42
 msgid "You can choose Theme color mode here"
 msgstr "你可以选择喜欢的主题模式"
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:54
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:59
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:64
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:69
 msgid "[Dark Mode]"
 msgstr "[暗色模式] "
 
-#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:39
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:44
 #: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:49
+#: luci-app-advancedplus/luasrc/model/cbi/advancedplus/config-argon.lua:54
 msgid "[Light Mode]"
 msgstr "[亮色模式] "
+
+#~ msgid "</br>For specific usage, see:"
+#~ msgstr "</br>使用说明："
+
+#~ msgid "Save Changes"
+#~ msgstr "保存更改"
 
 #~ msgid "Accessing using HTTPS"
 #~ msgstr "使用https访问"
