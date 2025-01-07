@@ -7,7 +7,7 @@ return view.extend({
 	render: function(data) {
 		var m, s, o, mac;
 
-		m = new form.Map('etherwake', _('WakeUp On Lan'), _('WakeUp On Lan'));
+		m = new form.Map('etherwake', _('WakeUp On LAN'), _('WakeUp On LAN'));
 		s = m.section(form.GridSection, 'target');
 		s.nodescriptions = true;
 		s.anonymous = true;

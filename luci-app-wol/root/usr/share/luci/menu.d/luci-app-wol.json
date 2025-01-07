@@ -1,6 +1,6 @@
 {
 	"admin/services/wol": {
-		"title": "Wake on LAN",
+		"title": "WakeUp On LAN",
 		"order": 90,
 		"action": {
 			"type": "view",
