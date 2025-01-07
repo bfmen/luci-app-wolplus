@@ -13,16 +13,13 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json:3
-msgid "Wake on LAN"
-msgstr ""
-
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:20
 msgid "WakeUp"
 msgstr ""
 
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:10
-msgid "WakeUp On Lan"
+#: luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json:3
+msgid "WakeUp On LAN"
 msgstr ""
 
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:18

@@ -37,7 +37,6 @@ msgstr ""
 msgid "Wake Up Host"
 msgstr ""
 
-#: luci-app-wolplus/luasrc/controller/wolplus.lua:8
 #: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:4
 msgid "Wake on LAN +"
 msgstr ""
@@ -45,4 +44,8 @@ msgstr ""
 #: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:4
 msgid ""
 "Wake on LAN is a mechanism to remotely boot computers in the local network."
+msgstr ""
+
+#: luci-app-wolplus/luasrc/controller/wolplus.lua:8
+msgid "WakeUp On LAN +"
 msgstr ""

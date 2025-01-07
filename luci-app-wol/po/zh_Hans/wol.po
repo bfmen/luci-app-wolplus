@@ -34,6 +34,7 @@ msgid "WakeUp"
 msgstr "唤醒"
 
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:10
+#: luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json:3
 msgid "WakeUp On LAN"
 msgstr "WakeUp On LAN"
 

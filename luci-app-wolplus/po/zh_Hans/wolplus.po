@@ -37,7 +37,6 @@ msgstr "请先 [保存并应用] 您的更改"
 msgid "Wake Up Host"
 msgstr "唤醒主机"
 
-#: luci-app-wolplus/luasrc/controller/wolplus.lua:8
 #: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:4
 msgid "Wake on LAN +"
 msgstr ""
@@ -46,3 +45,7 @@ msgstr ""
 msgid ""
 "Wake on LAN is a mechanism to remotely boot computers in the local network."
 msgstr "网络唤醒是一种远程启动局域网内计算机的机制。"
+
+#: luci-app-wolplus/luasrc/controller/wolplus.lua:8
+msgid "WakeUp On LAN +"
+msgstr ""
