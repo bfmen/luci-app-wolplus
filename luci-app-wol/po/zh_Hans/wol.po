@@ -29,14 +29,22 @@ msgstr "硬件地址"
 msgid "Name"
 msgstr "主机名称"
 
-#: luci-app-wol/htdocs/luci-static/resources/view/wol.js:20
-msgid "WakeUp"
-msgstr "唤醒"
-
-#: luci-app-wol/htdocs/luci-static/resources/view/wol.js:10
 #: luci-app-wol/root/usr/share/luci/menu.d/luci-app-wol.json:3
 msgid "WakeUp On LAN"
 msgstr "WakeUp On LAN"
+
+#: luci-app-wol/htdocs/luci-static/resources/view/wol.js:20
+msgid "Wakeup"
+msgstr ""
+
+#: luci-app-wol/htdocs/luci-static/resources/view/wol.js:10
+msgid "Wakeup On LAN"
+msgstr ""
+
+#: luci-app-wol/htdocs/luci-static/resources/view/wol.js:10
+msgid ""
+"Wakeup On LAN is a mechanism to remotely boot computers in the local network."
+msgstr ""
 
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:18
 msgid "the MAC of device"
@@ -45,3 +53,6 @@ msgstr "设备的硬件地址"
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:16
 msgid "the Name of device"
 msgstr "设备的主机名称"
+
+#~ msgid "WakeUp"
+#~ msgstr "唤醒"
