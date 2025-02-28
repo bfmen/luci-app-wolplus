@@ -5,26 +5,32 @@
 
 return view.extend({
 	render: function(data) {
-		var m, s, o, mac;
+		var m, s, mac;
 
-		m = new form.Map('etherwake', _('WakeUp On LAN'), _('WakeUp On LAN'));
+		m = new form.Map('etherwake', _('Wakeup On LAN'), _('Wakeup On LAN is a mechanism to remotely boot computers in the local network.'));
 		s = m.section(form.GridSection, 'target');
 		s.nodescriptions = true;
 		s.anonymous = true;
 		s.addremove = true;
 
-		o = s.(form.Value, 'name', _('Name'), _('the Name of device'));
+		s.option(form.Value, 'name', _('Name'), _('the Name of device'));
 
 		mac = s.option(form.Value, 'mac', _('MAC'), _('the MAC of device'));
 
-		o = s.option(form.Button, '_apply', _('WakeUp'));
-		o.editable = true;
-		o.modalonly = false;
-		o.inputstyle = 'apply';
-		o.onclick = function(ev, section_id) {
-			var val=mac.cfgvalue(section_id);
-			return fs.exec('/usr/bin/etherwake',['-D','-i','br-lan',val]).then(function(res){alert(res.stdout+res.stderr)}).catch(function(err) {alert(err)});
-		}
+		var btn = s.option(form.Button, '_apply', _('Wakeup'));
+		btn.editable = true;
+		btn.modalonly = false;
+		btn.inputstyle = 'apply';
+		btn.onclick = function(ev, section_id) {
+			var val = mac.cfgvalue(section_id);
+			fs.exec('/usr/bin/etherwake', ['-D', '-i', 'br-lan', val])
+				.then(function(res) {
+					alert(res.stdout + res.stderr);
+				})
+				.catch(function(err) {
+					alert(err);
+				});
+		};
 		return m.render();
 	},
 });

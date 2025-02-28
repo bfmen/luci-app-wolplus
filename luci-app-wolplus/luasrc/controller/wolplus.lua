@@ -1,34 +1,30 @@
 module("luci.controller.wolplus", package.seeall)
-local NIXIO_FS = require("nixio.fs")
-local LUCI_HTTP = require("luci.http")
-local LUCI_UCI = require("luci.model.uci").cursor()
+local nixio_fs = require("nixio.fs")
+local luci_http = require("luci.http")
+local luci_uci = require("luci.model.uci").cursor()
 
 function index()
-	if not NIXIO_FS.access("/etc/config/wolplus") then return end
+	if not nixio_fs.access("/etc/config/wolplus") then return end
 	entry({"admin", "services", "wolplus"}, cbi("wolplus"), _("Wakeup On LAN +"), 95).dependent = true
-	entry( {"admin", "services", "wolplus", "awake"}, post("awake") ).leaf = true
+	entry({"admin", "services", "wolplus", "awake"}, post("awake")).leaf = true
 end
 
 function awake(sections)
-	lan = LUCI_UCI:get("wolplus", sections, "maceth")
-	mac = LUCI_UCI:get("wolplus", sections, "macaddr")
-	cmd = "/usr/bin/etherwake -D -i " .. lan .. " -b " .. mac .. " 2>&1"
-	local e = {}
-	local p = io.popen(cmd)
+	local lan = luci_uci:get("wolplus", sections, "maceth")
+	local mac = luci_uci:get("wolplus", sections, "macaddr")
+	local cmd = string.format("/usr/bin/etherwake -D -i %s -b %s 2>&1", lan, mac)
+	local result = {}
+	local pipe = io.popen(cmd)
 	local msg = ""
-	if p then
-		while true do
-			local l = p:read("*l")
-			if l then
-				if #l > 100 then l = l:sub(1, 100) .. "..." end
-				msg = msg .. l
-			else
-				break
-			end
+
+	if pipe then
+		for line in pipe:lines() do
+			msg = msg .. (line:len() > 100 and line:sub(1, 100) .. "..." or line)
 		end
-		p:close()
+		pipe:close()
 	end
-	e["data"] = msg
-	LUCI_HTTP.prepare_content("application/json")
-	LUCI_HTTP.write_json(e)
+
+	result["data"] = msg
+	luci_http.prepare_content("application/json")
+	luci_http.write_json(result)
 end
