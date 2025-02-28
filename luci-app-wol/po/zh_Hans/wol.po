@@ -44,7 +44,7 @@ msgstr ""
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:10
 msgid ""
 "Wakeup On LAN is a mechanism to remotely boot computers in the local network."
-msgstr ""
+msgstr "网络唤醒是一种远程启动局域网内计算机的机制。"
 
 #: luci-app-wol/htdocs/luci-static/resources/view/wol.js:18
 msgid "the MAC of device"
