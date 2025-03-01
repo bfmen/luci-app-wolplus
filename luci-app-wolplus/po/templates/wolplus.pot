@@ -39,11 +39,11 @@ msgstr ""
 
 #: luci-app-wolplus/luasrc/controller/wolplus.lua:8
 #: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:3
-msgid "Wakeup On LAN +"
+msgid "Wake on LAN +"
 msgstr ""
 
 #: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:3
 msgid ""
-"Wakeup On LAN + is a mechanism to remotely boot computers in the local "
+"Wake on LAN + is a mechanism to remotely boot computers in the local "
 "network."
 msgstr ""

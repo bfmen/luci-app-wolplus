@@ -5,14 +5,14 @@ local luci_uci = require("luci.model.uci").cursor()
 
 function index()
 	if not nixio_fs.access("/etc/config/wolplus") then return end
-	entry({"admin", "services", "wolplus"}, cbi("wolplus"), _("Wakeup On LAN +"), 95).dependent = true
+	entry({"admin", "services", "wolplus"}, cbi("wolplus"), _("Wake on LAN +"), 95).dependent = true
 	entry({"admin", "services", "wolplus", "awake"}, post("awake")).leaf = true
 end
 
 function awake(sections)
 	local lan = luci_uci:get("wolplus", sections, "maceth")
 	local mac = luci_uci:get("wolplus", sections, "macaddr")
-	local cmd = string.format("/usr/bin/etherwake -D -i %s -b %s 2>&1", lan, mac)
+	local cmd = string.format("/usr/bin/etherwake -b -D -i %s %s 2>&1", lan, mac)
 	local result = {}
 	local pipe = io.popen(cmd)
 	local msg = ""
