@@ -5,7 +5,7 @@ msgstr "Content-Type: text/plain; charset=UTF-8\n"
 msgid "&"
 msgstr ""
 
-#: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:31
+#: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:34
 msgid "Awake"
 msgstr "唤醒"
 
@@ -25,7 +25,7 @@ msgstr "硬件地址"
 msgid "Name"
 msgstr "主机名称"
 
-#: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:21
+#: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:23
 msgid "Network Interface"
 msgstr "网络接口"
 
@@ -33,7 +33,7 @@ msgstr "网络接口"
 msgid "Please [Save & Apply] your changes first"
 msgstr "请先 [保存并应用] 您的更改"
 
-#: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:30
+#: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:33
 msgid "Wake Up Host"
 msgstr "唤醒主机"
 
@@ -44,6 +44,5 @@ msgstr ""
 
 #: luci-app-wolplus/luasrc/model/cbi/wolplus.lua:3
 msgid ""
-"Wake on LAN + is a mechanism to remotely boot computers in the local "
-"network."
+"Wake on LAN + is a mechanism to remotely boot computers in the local network."
 msgstr "网络唤醒是一种远程启动局域网内计算机的机制。"
